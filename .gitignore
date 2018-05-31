@@ -1,0 +1,32 @@
+
+# ignore this file #
+
+
+# macOS generated files #
+*.DS_Store
+*.DS_Store?
+*._*
+
+# ignore the whole dir #
+fontstyle/
+
+# ignore python compiled file#
+*.py[cod]
+
+# ignore some js files #
+static/js/alphabet.js
+static/js/bootstrap.min.js
+static/js/bootstrap-table.js
+static/js/echarts.js
+static/js/jquery.min.js
+static/js/macarons.js
+static/js/table.js
+static/js/dark.js
+
+# ignore some html files #
+templates/login.html
+templates/success.html
+
+# ignore 'idea' #
+.idea/
+.idea/vcs.xml

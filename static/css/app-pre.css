@@ -1,0 +1,163 @@
+/*tbody{
+overflow-x: auto !important;
+overflow-y:auto!important;
+height:100%!important;
+}*/
+@font-face {
+  font-family: 'quicksand_bold';
+  src: url('../../fontstyle/Quicksand-Bold.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.header {
+    text-align: center;
+}
+.header h1{
+    font-family: "PT Mono";
+    color: #33435b;
+    text-shadow: 0 0 0.2em #87F;
+    font-size: 2.5em;
+}
+
+.myForm {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 1.2em;
+    width: 38em;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius:25px;
+    background: #e4e4f7;
+    -webkit-box-shadow: 0 0 22px 0 rgba(50, 50, 50, 1);
+    -moz-box-shadow:    0 0 22px 0 rgba(50, 50, 50, 1);
+    box-shadow:         0 0 22px 0 rgba(50, 50, 50, 1);
+}
+
+.myForm * {
+    box-sizing: border-box;
+}
+
+.myForm h2{
+  background:#2f435e;
+  border-radius: 6px 6px 6px 6px !important;
+  box-shadow: 0 0 0 1px #5F5A4B, 1px 1px 6px 1px rgba(10, 10, 0, 0.5);
+  color: #FFFFFF;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 25px;
+  margin: 15px 0 !important;
+  padding: 5px 0 5px 20px;
+  text-shadow: 2px 2px 3px #222222;
+
+}
+
+.myForm fieldset {
+    border: none;
+    padding: 0;
+}
+
+.myForm legend,
+.myForm label {
+    padding: 0;
+    font-weight: bold;
+}
+
+.myForm label.choice {
+    font-size: 0.9em;
+    font-weight: normal;
+}
+
+.myForm label {
+    text-align: left;
+    display: block;
+}
+
+.myForm input[type="text"],
+.myForm input[type="tel"],
+.myForm input[type="email"],
+.myForm input[type="number"],
+.myForm input[type="datetime-local"],
+.myForm select,
+.myForm textarea {
+    float: right;
+    width: 60%;
+    border: 1px solid #ccc;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 0.9em;
+    padding: 0.3em;
+}
+
+.myForm textarea {
+    height: 100px;
+}
+
+.myForm input[type="radio"],
+.myForm input[type="checkbox"] {
+    margin-left: 40%;
+}
+
+.myForm button {
+    border: none;
+    font-weight: bold;
+    margin-left: 40%;
+    margin-top: 1.8em;
+
+    text-decoration:none;
+    background:#2f435e;
+    color:#f2f2f2;
+
+    padding: 10px 30px 10px 30px;
+    font-size:16px;
+    font-family: 微软雅黑,宋体,Arial,Helvetica,Verdana,sans-serif;
+    border-radius:3px;
+
+    -webkit-transition:all linear 0.30s;
+    -moz-transition:all linear 0.30s;
+    transition:all linear 0.30s;
+}
+
+
+.myForm button:hover {
+    background: #ccc;
+    cursor: pointer;
+}
+
+
+#wrap{
+    margin-left: auto;
+    margin-right: auto;
+}
+#predict{
+    float: left;
+}
+#result{
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 1.2em;
+    width: 32em;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius:25px;
+    background: #e4e4f7;
+    -webkit-box-shadow: 0 0 22px 0 rgba(50, 50, 50, 1);
+    -moz-box-shadow:    0 0 22px 0 rgba(50, 50, 50, 1);
+    box-shadow:         0 0 22px 0 rgba(50, 50, 50, 1);
+    float: right;
+}
+#result p{
+    text-align: center;
+
+}
+#result span{
+    font-weight: bold;
+    font-size: x-large;
+}
+#result img{
+    width: 500px;
+    height: 222px;
+}
+#rst_num{
+    border:2px solid #33435b;
+}
+#err{
+    font-family: Monaco;
+}

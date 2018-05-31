@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Price Prediction</title>
+    <link rel="stylesheet" href="../static/css/app-pre.css">
+    <script src="../static/js/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Housing Price Prediction In New York City</h1>
+    </div>
+
+    <div id="wrap">
+        <div id="predict">
+            <form id="form_p" class="myForm" method="get" enctype="application/x-www-form-urlencoded" onsubmit="return getFormInfo()">
+                <h2>Please Input The Feature Values As Following</h2>
+                <br>
+                <p>
+                    <label>Neighbor Area:
+                        <select id="neighbor_area" name="neighbor_area" required="required">
+                            <option value="" selected="selected">Select Neighbor</option>
+                        </select>
+                    </label>
+                </p>
+
+                <p>
+                    <label>Building Class Category:
+                        <!--input type="tel" name="phone_number"-->
+                        <select id="class_category" name="class_category" required="required">
+                            <option selected="selected">Select Class Category</option>
+                        </select>
+                    </label>
+                </p>
+
+
+                <p>
+                    <label>Building Class As Present:
+                        <!--input type="email" name="email_address"-->
+                        <select id="class_as_present" name="class_as_present" required="required">
+                            <option selected="selected">Select Class As Present</option>
+                        </select>
+                    </label>
+                </p>
+
+                <p>
+                    <label>Residental Units:
+                        <input type="number" id="r_units" name="r_units" required="required" placeholder="2">
+                    </label>
+                </p>
+
+                <p>
+                    <label>Commercial Units:
+                        <input type="number" id="c_units" name="c_units" required="required" placeholder="1">
+                    </label>
+                </p>
+
+
+                <p>
+                    <label>Total Units:
+                        <input type="number" id="t_units" name="t_units" required="required" placeholder="3">
+                    </label>
+                </p>
+
+                <p>
+                    <label>Land Square Feet:
+                        <input type="number" id="land_squre" name="land_squre" required="required" placeholder="3000">
+                    </label>
+                </p>
+
+                <p>
+                    <label>Year Built:
+                        <input type="number" id="year_built" name="year_built" required="required" placeholder="1988">
+                    </label>
+                </p>
+
+                <p>
+                    <label>Sale Month:
+                        <select id="sale_month" name="sale_month" required="required">
+                            <option selected="selected">Select Month</option>
+                        </select>
+                    </label>
+                </p>
+                <br>
+                <p>
+                    <button name="submit" >Submit</button>  <!--onclick="getFormInfo();"-->
+                </p>
+                <!--
+                <p>
+                    <label>Sale Month
+                        <input type="text" name="sale_month" required list="destinations">
+                    </label>
+                    <datalist id="destinations"></datalist>
+                </p>
+                -->
+                <!--
+                <fieldset>
+                    <legend>Residental Units</legend>
+                    <p><label class="choice"> <input type="radio" name="taxi" required value="car"> Car </label></p>
+                    <p><label class="choice"> <input type="radio" name="taxi" required value="van"> Van </label></p>
+                    <p><label class="choice"> <input type="radio" name="taxi" required value="tuktuk"> Tuk Tuk </label></p>
+                    <p><label class="choice"> <input type="radio" name="taxi" required value="tuktuk"> Tuk Tuk </label></p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Commercial Units</legend>
+                    <p><label class="choice"> <input type="checkbox" name="extras" value="baby"> Baby Seat </label></p>
+                    <p><label class="choice"> <input type="checkbox" name="extras" value="wheelchair"> Wheelchair Access </label></p>
+                    <p><label class="choice"> <input type="checkbox" name="extras" value="tip"> Stock Tip </label></p>
+                </fieldset>
+
+                <p>
+                    <label>Total Units
+                    <input type="datetime-local" name="pickup_time" required>
+                    </label>
+                </p>
+
+                <p>
+                    <label>Land Square Feet
+                        <select id="pickup_place" name="pickup_place">
+                            <option value="" selected="selected">Select One</option>
+                            <option value="office" >Taxi Office</option>
+                            <option value="town_hall" >Town Hall</option>
+                            <option value="telepathy" >We'll Guess!</option>
+                        </select>
+                    </label>
+                </p>
+
+                <p>
+                    <label>Sale Month
+                        <textarea name="comments" maxlength="500"></textarea>
+                    </label>
+                </p>
+                -->
+            </form>
+        </div>
+        <div id="result">
+            <p id="rst_p">PREDICTION RESULT: <span id="rst_num" style="color: #ec971f">0.00</span> <span style="color: #ec971f">($)</span></p>
+
+            <div id="err">
+                <p >Error Analysis:</p>
+                <table border="1" align="center" >
+                  <tr>
+                    <th>Root Mean Squared Log Error</th>
+                    <th>Mean Absolute Error</th>
+                  </tr>
+                  <tr>
+                    <td align="center" id="rmsle">unkown</td>
+                    <td align="center" id="mae">unkown</td>
+                  </tr>
+                </table>
+                <br>
+                <div align="center">
+                    <img src="../static/images/iteration.png">
+                    <img src="../static/images/step.png">
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="../static/js/app-pre.js"></script>
+</body>
+</html>
+
