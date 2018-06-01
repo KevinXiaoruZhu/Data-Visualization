@@ -28,6 +28,19 @@
             -moz-box-shadow:    0 0 22px 0 rgba(50, 50, 50, 1);
             box-shadow:         0 0 22px 0 rgba(50, 50, 50, 1);
         }
+        #total {
+            font-family: "PT Mono";
+            font-weight: bold;
+            font-size: medium;
+            background-color: #fdf8f0;
+            padding: 1em;
+            border: 1px solid #ccc;
+            border-radius:25px;
+            -webkit-box-shadow: 0 0 22px 0 rgba(50, 50, 50, 1);
+            -moz-box-shadow:    0 0 22px 0 rgba(50, 50, 50, 1);
+            box-shadow:         0 0 22px 0 rgba(50, 50, 50, 1);
+            text-align:center;
+        }
     </style>
   </head>
   <body>
@@ -36,6 +49,7 @@
         <h1 style="text-align: center; font-family: Monaco; text-shadow: 0 0 0.3em #b4716f, 0 0 0.3em #5bb6b9, 0 0 0.3em #fdf8f0;">Statistical Analysis of Sales Volume</h1>
     </div>
     <br>
+    <div id="total" style="width: 1400px;height:54px;" class="container"></div><br>
     <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
     <div id="graph0" style="width: 1400px;height:400px;" class="container"></div><br>
     <div id="graph1" style="width: 1400px;height:400px;" class="container"></div><br>

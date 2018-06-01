@@ -99,16 +99,16 @@ $.get('/getData').done(function(g_data) {
     //g_data = g_data[0];
     attrs5 = getObjectKeys(g_data[5]);
     data5 = getObjectValues(g_data[5]);
-    option5 = getOptionConfig('划分:Neighbor--单位:Dollars/feet^2', {},['价格'], attrs5, '价格', 'bar', data5);
+    option5 = getOptionConfig('Division: Neighbor -- unit:Dollars/feet^2', {},['Price'], attrs5, 'Price', 'bar', data5);
 
     //g_data = g_data[1];
     attrs6 = getObjectKeys(g_data[6]);
     data6 = getObjectValues(g_data[6]);
-    option6 = getOptionConfig('划分:Building Class--单位:Dollars/feet^2', {},['价格'], attrs6, '价格', 'bar', data6);
+    option6 = getOptionConfig('Division: Building Class -- unit:Dollars/feet^2', {},['Price'], attrs6, 'Price', 'bar', data6);
 
     attrs7 = getObjectKeys(g_data[7]);
     data7 = getObjectValues(g_data[7]);
-    option7 = getOptionConfig('划分:Built year--单位:Dollars/feet^2', {},['价格'], attrs7, '价格', 'bar', data7);
+    option7 = getOptionConfig('Division: Built year -- unit:Dollars/feet^2', {},['Price'], attrs7, 'Price', 'bar', data7);
 
     // 指定图表的配置项和数据
     /*

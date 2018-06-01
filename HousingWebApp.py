@@ -2,7 +2,6 @@
 # coding=utf-8
 from scapy.all import *
 from flask import Flask, request, render_template, redirect, make_response, flash, session, g, url_for
-from multiprocessing import Process, Value, Manager
 import json
 import time
 import predict_module

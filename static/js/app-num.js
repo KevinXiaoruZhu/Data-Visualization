@@ -113,34 +113,36 @@ function getOptionConfig(title, tooltip, legendData, xAxis, seriesName, seriesTy
     };
 }
 
+$("#total").html("Annual Sales: 22243 times");
+
 $.get('/getData').done(function(g_data) {
     g_data = $.parseJSON(g_data);
 
     //g_data = g_data[0];
     attrs0 = getObjectKeys(g_data[0]);
     data0 = getObjectValues(g_data[0]);
-    option0 = getOptionConfig('划分:Neighbor--单位:次', {},['销量'], attrs0, '销量', 'bar', data0);
+    option0 = getOptionConfig('Division: Neighbor -- unit:times', {},['volume'], attrs0, 'volume', 'bar', data0);
 
     //g_data = g_data[1];
     attrs1 = getObjectKeys(g_data[1]);
     data1 = getObjectValues(g_data[1]);
     console.log(attrs1);
-    option1 = getOptionConfig('划分:Building Class--单位:次', {},['销量'], attrs1, '销量', 'bar', data1);
+    option1 = getOptionConfig('Division: Building Class -- unit:times', {},['volume'], attrs1, 'volume', 'bar', data1);
 
     attrs2 = getObjectKeys(g_data[2]);
     data2 = getObjectValues(g_data[2]);
-    option2 = getOptionConfig('划分:Unit Number--单位:次', {/*formatter:'{c}次'*/},['销量'], attrs2, '销量', 'bar', data2);
+    option2 = getOptionConfig('Division: Unit Number -- unit:times', {/*formatter:'{c}次'*/},['volume'], attrs2, 'volume', 'bar', data2);
 
     attrs3 = getObjectKeys(g_data[3]);
     data3 = getObjectValues(g_data[3]);
     for(var i = 0; i < attrs3.length; ++i){
         attrs3[i] = String(attrs3[i]) + '月';
     }
-    option3 = getOptionConfig('划分:sale_month--单位:次', {},['销量'], attrs3, '销量', 'line', data3);
+    option3 = getOptionConfig('Division: sale_month -- unit:times', {},['volume'], attrs3, 'volume', 'line', data3);
 
     attrs4 = getObjectKeys(g_data[4]);
     data4 = getObjectValues(g_data[4]);
-    option4 = getOptionConfig('划分:Built year--单位:次', {},['销量'], attrs4, '销量', 'bar', data4);
+    option4 = getOptionConfig('Division: Built year -- unit:times', {},['volume'], attrs4, 'volume', 'bar', data4);
     // 指定图表的配置项和数据
     /*
     option0 = {
