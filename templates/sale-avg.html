@@ -28,6 +28,27 @@
             -moz-box-shadow:    0 0 22px 0 rgba(50, 50, 50, 1);
             box-shadow:         0 0 22px 0 rgba(50, 50, 50, 1);
         }
+        #return2 {
+            font-weight: bold;
+            margin-left: 45%;
+            margin-top: 1.4em;
+            margin-bottom: 1.4em;
+            text-decoration:none;
+            background: #fdf8f0;
+            color: #080a0d;
+
+            padding: 10px 70px 10px 70px;
+            font-size:20px;
+            font-family: 微软雅黑,宋体,Arial,Helvetica,Verdana,sans-serif;
+            border-radius:9px;
+            -webkit-transition:all linear 0.30s;
+            -moz-transition:all linear 0.30s;
+            transition:all linear 0.30s;
+        }
+        #return2:hover {
+            background: #ccc;
+            cursor: pointer;
+        }
     </style>
   </head>
   <body>
@@ -40,7 +61,7 @@
     <div id="graph5"  class="container"></div><br>
     <div id="graph6"  class="container"></div><br>
     <div id="graph7" class="container"></div><br>
-
+    <p><button id="return2" onclick="window.location.href='/index'" >Return</button></p>
     <!--
     <div id="toolbar">
     <button id="button" class="btn btn-default">catch/stop</button>
@@ -88,7 +109,6 @@
       </table>
     </div>
     -->
-
 </body>
 <script src="../static/js/app-avg.js"></script>
 </html>

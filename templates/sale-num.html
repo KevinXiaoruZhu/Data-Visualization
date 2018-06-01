@@ -41,6 +41,27 @@
             box-shadow:         0 0 22px 0 rgba(50, 50, 50, 1);
             text-align:center;
         }
+        #return1 {
+            font-weight: bold;
+            margin-left: 45%;
+            margin-top: 1.4em;
+            margin-bottom: 1.4em;
+            text-decoration:none;
+            background: #fdf8f0;
+            color: #080a0d;
+
+            padding: 10px 70px 10px 70px;
+            font-size:20px;
+            font-family: 微软雅黑,宋体,Arial,Helvetica,Verdana,sans-serif;
+            border-radius:9px;
+            -webkit-transition:all linear 0.30s;
+            -moz-transition:all linear 0.30s;
+            transition:all linear 0.30s;
+        }
+        #return1:hover {
+            background: #ccc;
+            cursor: pointer;
+        }
     </style>
   </head>
   <body>
@@ -49,14 +70,15 @@
         <h1 style="text-align: center; font-family: Monaco; text-shadow: 0 0 0.3em #b4716f, 0 0 0.3em #5bb6b9, 0 0 0.3em #fdf8f0;">Statistical Analysis of Sales Volume</h1>
     </div>
     <br>
-    <div id="total" style="width: 1400px;height:54px;" class="container"></div><br>
+    <div id="total" style="width: 1400px;height:54px;" class="container">Annual Sales: <span id="vlm"></span>  times</div><br>
     <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
     <div id="graph0" style="width: 1400px;height:400px;" class="container"></div><br>
     <div id="graph1" style="width: 1400px;height:400px;" class="container"></div><br>
     <div id="graph2" style="width: 1400px;height:400px;" class="container"></div><br>
     <div id="graph3" style="width: 1400px;height:400px;" class="container"></div><br>
     <div id="graph4" style="width: 1400px;height:400px;" class="container"></div><br>
-    {#    <div id="toolbar">
+    <p><button id="return1" onclick="window.location.href='/index'" >Return</button></p>
+    <!--    <div id="toolbar">
         <button id="button" class="btn btn-default">catch/stop</button>
     </div>
     <div class="container">
@@ -100,7 +122,8 @@
         </tr>
         </thead>
       </table>
-    </div>#}
+    </div>
+    -->
 </body>
 <script src="../static/js/app-num.js"></script>
 {#<script src="../static/js/table.js"></script>#}

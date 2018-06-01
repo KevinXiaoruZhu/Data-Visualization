@@ -113,7 +113,7 @@ function getOptionConfig(title, tooltip, legendData, xAxis, seriesName, seriesTy
     };
 }
 
-$("#total").html("Annual Sales: 22243 times");
+$("#vlm").html("22243");
 
 $.get('/getData').done(function(g_data) {
     g_data = $.parseJSON(g_data);
